@@ -11,41 +11,33 @@ This repository provides a convenient and secure solution to run Auto-GPT in a D
 ## Installation and Running
 
 1. Clone the repository and navigate to the project directory
-2. Copy the sample configuration file:
+2. Copy the sample AI settings file and edit to suit your needs.
 
-```
-cp ai_settings.sample ai_settings.yaml
-```
+    ```
+    cp ai_settings.sample ai_settings.yaml
+    ```
 
-3. Edit `ai_settings.yaml` to suit your needs
-4. Initialize the Auto-GPT JSON file and set the required permissions:
+3. Copy the sample .env file and edit to suit your needs, you can read about these settings on the [auto-gpt repo](https://github.com/Significant-Gravitas/Auto-GPT).
 
-```
-touch auto-gpt.json && \
-chmod 644 auto-gpt.json 
-```
+    ```
+    cp .env.template .env
+    ```
 
-5. Run the Docker container:
+4. Run the Docker container:
 
-```
-docker-compose up -d
-```
+    ```
+    docker-compose up -d
+    ```
 
 
 ## Accessing the Terminal
 
-To access the terminal UI via a browser, visit `http://127.0.0.1:8080` or the IP address of your running container. If you're unsure of the IP address, use the following command to check the logs:
-
-
-```
-docker logs autogpt-gotty
-```
-
+To access the terminal UI via a browser, visit `http://127.0.0.1:8080` or the IP address of the system it's running on. 
 
 ## TODO
 
-- Check if `gotty` can pass audio from the `--speak` option
+- Check if `gotty` can pass audio from the autogpt `--speak` option
 - Verify that integration with ElevenLabs is functional (should be okay, but untested)
 
-![Obligatory Screenshot](screenshot.png)
+![Obligatory Screenshot](screenshots/screenshot.png)
 

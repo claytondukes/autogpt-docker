@@ -1,5 +1,24 @@
 # Auto-GPT on Docker with Web Access
 
+# Update:
+
+Unfortunately, the Auto-GPT project is moving so fast, with so many changes every day, that I can't keep up with this. 
+
+The changes being made aren't small, they are major, e.g.:
+* restructuring directories
+* moving file locations
+* rewriting entire sections
+* adding selenium to open a desktop web browser (this one is a bit nutty since not everyone would even have a desktop os running it)
+
+Which means I would have to rewrite my Dockerfile every time.
+
+If someone wants to take this project over, please let me know since having this super simple way of spinning up a container is way more efficient than checking out their repo, setting up pip, etc.
+
+
+
+# Old:
+
+
 This repository provides a convenient and secure solution to run Auto-GPT in a Docker container with a web-based terminal. Running Auto-GPT in a Docker container isolates it from the host system, preventing accidental damage from commands like `rm -rf` or `apt install <whatever>`. Additionally, it ensures a consistent and easy-to-maintain environment.
 
 ## Features
